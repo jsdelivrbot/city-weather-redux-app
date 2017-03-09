@@ -18,6 +18,7 @@ export function fetchWeather(city) {
 
     const request = axios.get(url);
 
+    console.log("Request : ", request);
     // payload is an optional property that goes along with actions that can contain some additional
     // data that describes this particular action.
     return {

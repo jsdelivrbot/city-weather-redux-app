@@ -6,7 +6,7 @@ import APIKEY from './../../config'
 //const ROOT_URL = 'http://samples.openweathermap.org/data/2.5/forecast?appid=' + APIKEY;
 
 // new ES6 syntax - template string
-const ROOT_URL = `http://samples.openweathermap.org/data/2.5/forecast?appid=${APIKEY}`;
+const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${APIKEY}`;
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 

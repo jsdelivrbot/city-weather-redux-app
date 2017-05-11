@@ -14,7 +14,7 @@ export function fetchWeather(city) {
 
     // API call: http://openweathermap.org/forecast5
     // api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
-    const url = `${ROOT_URL}&q=${city},ca`;
+    const url = `${ROOT_URL}&q=${city},ca&units=metric`;
 
     const request = axios.get(url);
 

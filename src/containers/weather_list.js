@@ -23,7 +23,7 @@ class WeatherList extends Component {
                     <GoogleMap lon={lon} lat={lat} />
                 </td>
                 <td>
-                    <Chart data={temps} color="red" units="K"/>
+                    <Chart data={temps} color="red" units="&#8451;"/>
                 </td>
                 <td>
                     <Chart data={pressures} color="green" units="hPa"/>
@@ -42,7 +42,7 @@ class WeatherList extends Component {
                     <tr>
                         <th>City</th>
                         <th>Map</th>
-                        <th>Temperature (K)</th>
+                        <th>Temperature (&#8451;)</th>
                         <th>Pressure (hPa)</th>
                         <th>Humidity (%)</th>
                     </tr>

@@ -73,7 +73,7 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _reducers = __webpack_require__(241);
+	var _reducers = __webpack_require__(240);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -22626,7 +22626,7 @@
 
 	var _search_bar2 = _interopRequireDefault(_search_bar);
 
-	var _weather_list = __webpack_require__(236);
+	var _weather_list = __webpack_require__(235);
 
 	var _weather_list2 = _interopRequireDefault(_weather_list);
 
@@ -22792,18 +22792,15 @@
 
 	var _axios2 = _interopRequireDefault(_axios);
 
-	var _config = __webpack_require__(235);
-
-	var _config2 = _interopRequireDefault(_config);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	//const ROOT_URL = 'http://samples.openweathermap.org/data/2.5/forecast?appid=' + APIKEY;
 
 	// new ES6 syntax - template string
-	// Axios is a library that is solely made for making Ajax request from the browser
+	var API_KEY = '0a0ed90de4f59e163e566368495daa7f'; // Axios is a library that is solely made for making Ajax request from the browser
 	// Doc: https://github.com/mzabriskie/axios
-	var ROOT_URL = 'http://api.openweathermap.org/data/2.5/forecast?appid=0a0ed90de4f59e163e566368495daa7f';
+
+	var ROOT_URL = 'https://crossorigin.me/http://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?appid=' + APIKEY;
 
 	var FETCH_WEATHER = exports.FETCH_WEATHER = 'FETCH_WEATHER';
 
@@ -24315,20 +24312,6 @@
 
 /***/ },
 /* 235 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	// From http://openweathermap.org/forecast5
-	var OPEN_WEATHER_MAP_API_KEY = '0a0ed90de4f59e163e566368495daa7f';
-
-	exports.default = OPEN_WEATHER_MAP_API_KEY;
-
-/***/ },
-/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24345,11 +24328,11 @@
 
 	var _reactRedux = __webpack_require__(160);
 
-	var _chart = __webpack_require__(237);
+	var _chart = __webpack_require__(236);
 
 	var _chart2 = _interopRequireDefault(_chart);
 
-	var _google_map = __webpack_require__(240);
+	var _google_map = __webpack_require__(239);
 
 	var _google_map2 = _interopRequireDefault(_google_map);
 
@@ -24489,7 +24472,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps)(WeatherList);
 
 /***/ },
-/* 237 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24502,9 +24485,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactSparklines = __webpack_require__(238);
+	var _reactSparklines = __webpack_require__(237);
 
-	var _lodash = __webpack_require__(239);
+	var _lodash = __webpack_require__(238);
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -24535,7 +24518,7 @@
 	};
 
 /***/ },
-/* 238 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	(function webpackUniversalModuleDefinition(root, factory) {
@@ -25611,7 +25594,7 @@
 	;
 
 /***/ },
-/* 239 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/**
@@ -37969,7 +37952,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(181)(module), (function() { return this; }())))
 
 /***/ },
-/* 240 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38030,7 +38013,7 @@
 	exports.default = GoogleMap;
 
 /***/ },
-/* 241 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38041,7 +38024,7 @@
 
 	var _redux = __webpack_require__(167);
 
-	var _reducer_weather = __webpack_require__(242);
+	var _reducer_weather = __webpack_require__(241);
 
 	var _reducer_weather2 = _interopRequireDefault(_reducer_weather);
 
@@ -38054,7 +38037,7 @@
 	exports.default = rootReducer;
 
 /***/ },
-/* 242 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

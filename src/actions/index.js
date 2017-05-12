@@ -6,7 +6,7 @@ import axios from 'axios';
 
 // new ES6 syntax - template string
 const API_KEY = '0a0ed90de4f59e163e566368495daa7f'
-const ROOT_URL = `https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
+const ROOT_URL = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 

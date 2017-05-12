@@ -22800,7 +22800,7 @@
 	var API_KEY = '0a0ed90de4f59e163e566368495daa7f'; // Axios is a library that is solely made for making Ajax request from the browser
 	// Doc: https://github.com/mzabriskie/axios
 
-	var ROOT_URL = 'https://crossorigin.me/http://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?appid=' + API_KEY;
+	var ROOT_URL = 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast?appid=' + API_KEY;
 
 	var FETCH_WEATHER = exports.FETCH_WEATHER = 'FETCH_WEATHER';
 
